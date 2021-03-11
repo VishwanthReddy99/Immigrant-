@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="./assets/CSS.CSS">
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+</style>
+</head>
+<body>
+  <div class="hero-image">
+
+    <div class="topnav" id="myTopnav">
+
+        <a href="#home" class="active">Home</a>
+        <a href="#contact">Immigrant Services</a>
+              <a href="#contact">Our partners</a>
+
+            <a href="#contact">Visitor Services</a>
+            <a href="#contact">Forum</a>
+                  <a href="#contact">Contact Us</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+
+
+        </a>
+
+        </div>
+
+
+    </div>
+</div>
+
+<center>
+  <h1>Add Country</h1>
+
+</center>
+
+
+
+
+
+<div class="main">
+  <form action="/action_page.php">
+    <center>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="sid">Country ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="sname" name="Country ID" placeholder="Enter Country ID">
+      </div>
+    </div>
+    <div class="row" style="padding-top: 20px;">
+      <div class="col-25">
+        <label for="sname">Country Capital</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="sname" name="Country Capital" placeholder="Enter Country Capital">
+      </div>
+    </div>
+    <div class="row" style="padding-top: 20px;">
+      <div class="col-25">
+        <label for="lname">Population</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Population" name="Population" placeholder="Enter Population">
+      </div>
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+      <div class="col-25">
+        <label for="Primary Languauge">Primary Languauge</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Primary Languauge" name="Primary Languauge" placeholder="Enter Primary Languauge">
+      </div>
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+      <div class="col-25">
+        <label for="Primary Languauge">City ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="City ID" name="City ID" placeholder="Enter City ID">
+      </div>
+    </div>
+
+
+    <div class="submit">
+      <input type="submit">
+
+    </div>
+  </center>
+
+  </form>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+</body>
+</html>
