@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./assets/cssheader.css">
+<link rel="stylesheet" href="./assets/cssform.css">
+<link rel="stylesheet" href="./assets/cssimg.css">
+
+<style>
+ @import "compass/css3";
+ body {
+   font-size: 1vw;
+	
+}
+
+.grapdescr
+{
+  padding-top: 8%;
+}
+
+
+ .chart {
+	 display: table;
+	 table-layout: fixed;
+	 width: 60%;
+	 max-width: 700px;
+	 height: 200px;
+   padding-top: 10%;
+	 margin: 0 auto;
+	 background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+	 background-size: 100% 50px;
+	 background-position: left top;
+}
+
+.col{
+  width: 25%;
+  margin-top: 6px;
+}
+ .chart li {
+	 position: relative;
+	 display: table-cell;
+	 vertical-align: bottom;
+	 height: 200px;
+}
+ .chart span {
+	 margin: 0 1em;
+	 display: block;
+	 background:#0c3953;
+	 animation: draw 1s ease-in-out;
+}
+ .chart span:before {
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 top: 100%;
+	 padding: 5px 1em 0;
+	 display: block;
+	 text-align: center;
+	 content: attr(title);
+	 word-wrap: break-word;
+}
+
+
+
+.col
+{
+  padding-top: 8%;
+
+}
+ @keyframes draw {
+	 0% {
+		 height: 0;
+	}
+}
+@media screen and (max-width: 600px) {
+  .col{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+
+        <a href="#home" class="active">Home</a>
+        <a href="#contact">Immigrant Services</a>
+              <a href="#contact">Our partners</a>
+
+            <a href="#contact">Visitor Services</a>
+            <a href="#contact">Forum</a>
+                  <a href="#contact">Contact Us</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+
+
+        </a>
+
+        </div>
+        <div class="hero-image">
+          <div class="hero-text">
+          
+          </div>
+      </div>
+      
+
+<ul class="chart">
+    <li>
+        <center>
+            <h1> 1345</h1>
+        </center>
+
+            <span style="height:20%" title="Immigirants"></span>
+
+    
+    </li>
+    <li>
+        <center>
+            <h1> 4569</h1>
+        </center>
+      <span style="height:80%" title="Visitors"></span>
+    </li>
+   
+    
+  </ul>    
+<center>
+  <h3 class="grapdescr">The above graph shows the statstics related to number of Visitors and Immigirants</h3>
+ 
+
+</center>
+
+<center>
+  <label for="cars">Choose a country:</label>
+  <select  class="select-country"id="cars" name="carlist" form="carform">
+    <option value="Argentina">Argentina</option>
+    <option value="England">England</option>
+    <option value="South America">South America</option>
+  </select>
+</center>
+
+
+
+  <ul class="chart">
+    <li>
+        <center>
+            <h1> 600</h1>
+        </center>
+
+            <span style="height:8%" title="No of Schools "></span>
+
+    
+    </li>
+    <li>
+        <center>
+            <h1> 987</h1>
+        </center>
+      <span style="height:40%" title="No of Hospitals"></span>
+    </li>
+    <li>
+      <center>
+          <h1>3452</h1>
+      </center>
+    <span style="height:80%" title="No of Places to Visit"></span>
+  </li>
+   
+    
+  </ul>    
+  <center>
+    <h3 class="grapdescr">The above graph shows the statstics related to number of Schools,Hosiptals and Places to Visit in a particular Country</h3>
+   
+  
+  </center>
+  <center>
+    <h3 class="grapdescr">The above graph shows the statstics related to number of Visitors and Immigirants</h3>
+   
+  
+  </center>
+  
+  <center>
+    <label for="cars">Choose a country:</label>
+    <select id="cars" name="carlist" form="carform">
+      <option value="Argentina">Argentina</option>
+      <option value="England">England</option>
+      <option value="South America">South America</option>
+    </select>
+  </center>
+  
+  
+  
+    <ul class="chart">
+      <li>
+          <center>
+              <h1>785</h1>
+          </center>
+  
+              <span style="height:8%" title="No of Tips "></span>
+  
+      
+      </li>
+      <li>
+          <center>
+              <h1>468</h1>
+          </center>
+        <span style="height:40%" title="No of Contributions"></span>
+      </li>
+  
+     
+      
+    </ul>    
+    <center>
+      <h3 class="grapdescr">The above graph shows the statstics related to number of contributions and tips given by the immigrants to visitors per country</h3>
+     
+    
+    </center>
+  
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+</body>
+</html>
